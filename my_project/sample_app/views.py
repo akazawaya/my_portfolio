@@ -15,9 +15,9 @@ delete_post「削除」
 　引数で渡されたidにより、Post オブジェクトを取得し、オブジェクトを削除。
 """
 
-def create_post():
+def create_post(request):
     post = Post()
-    if requesr.method == 'GET':
+    if request.method == 'GET':
         form = PostForm(instance=post)
         return render(request,'sample_app/post_form.html',
                 {'form':form})
