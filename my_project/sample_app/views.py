@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.forms import ModelForm
 
-form sample_app.models import Post
+from sample_app.models import Post
 
 # この中にView（処理の定義）をすべて実装する
 """
